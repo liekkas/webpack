@@ -1,0 +1,47 @@
+@import './custom.less';
+
+.app-header {
+  height: @header-height;
+  background-color: @header-menu-bg;
+  color: @header-menu-text;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.app-module {
+  height: auto;
+  position: absolute;
+  top: @header-height;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100%;
+  // height: 100%;
+  padding: 24px;
+}
+
+.app-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.app-vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.app-full {
+  width: 100%;
+  height: 100%;
+}

@@ -44,7 +44,7 @@ module.exports = {
       type: 'string',
       required: false,
       message: 'Project description',
-      default: 'A Vue.js project',
+      default: '前端模板 --- 安装后请修改描述！',
     },
     author: {
       when: 'isNotTest',
@@ -69,70 +69,70 @@ module.exports = {
         },
       ],
     },
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
-    },
-    lint: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Use ESLint to lint your code?',
-    },
-    lintConfig: {
-      when: 'isNotTest && lint',
-      type: 'list',
-      message: 'Pick an ESLint preset',
-      choices: [
-        {
-          name: 'Standard (https://github.com/standard/standard)',
-          value: 'standard',
-          short: 'Standard',
-        },
-        {
-          name: 'Airbnb (https://github.com/airbnb/javascript)',
-          value: 'airbnb',
-          short: 'Airbnb',
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
-        },
-      ],
-    },
-    unit: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Set up unit tests',
-    },
-    runner: {
-      when: 'isNotTest && unit',
-      type: 'list',
-      message: 'Pick a test runner',
-      choices: [
-        {
-          name: 'Jest',
-          value: 'jest',
-          short: 'jest',
-        },
-        {
-          name: 'Karma and Mocha',
-          value: 'karma',
-          short: 'karma',
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'noTest',
-          short: 'noTest',
-        },
-      ],
-    },
-    e2e: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Setup e2e tests with Nightwatch?',
-    },
+    // router: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Install vue-router?',
+    // },
+    // lint: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Use ESLint to lint your code?',
+    // },
+    // lintConfig: {
+    //   when: 'isNotTest && lint',
+    //   type: 'list',
+    //   message: 'Pick an ESLint preset',
+    //   choices: [
+    //     {
+    //       name: 'Standard (https://github.com/standard/standard)',
+    //       value: 'standard',
+    //       short: 'Standard',
+    //     },
+    //     {
+    //       name: 'Airbnb (https://github.com/airbnb/javascript)',
+    //       value: 'airbnb',
+    //       short: 'Airbnb',
+    //     },
+    //     {
+    //       name: 'none (configure it yourself)',
+    //       value: 'none',
+    //       short: 'none',
+    //     },
+    //   ],
+    // },
+    // unit: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Set up unit tests',
+    // },
+    // runner: {
+    //   when: 'isNotTest && unit',
+    //   type: 'list',
+    //   message: 'Pick a test runner',
+    //   choices: [
+    //     {
+    //       name: 'Jest',
+    //       value: 'jest',
+    //       short: 'jest',
+    //     },
+    //     {
+    //       name: 'Karma and Mocha',
+    //       value: 'karma',
+    //       short: 'karma',
+    //     },
+    //     {
+    //       name: 'none (configure it yourself)',
+    //       value: 'noTest',
+    //       short: 'noTest',
+    //     },
+    //   ],
+    // },
+    // e2e: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Setup e2e tests with Nightwatch?',
+    // },
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
