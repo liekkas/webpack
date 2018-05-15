@@ -44,7 +44,7 @@ module.exports = {
       type: 'string',
       required: false,
       message: 'Project description',
-      default: '前端模板 --- 安装后请修改描述！',
+      default: '前端模板演示系统',
     },
     author: {
       when: 'isNotTest',
