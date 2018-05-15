@@ -7,16 +7,13 @@
 
 <script>
 import AppMenu from '@/components/layout/AppMenu'
-import {appRouter} from '@/router/defines'
 export default {
   components: {AppMenu},
   data() {
-    const module = 'alarm'
     return {
       openNames: this.$store.state.app.openSlideMenu,
-      menuList: _.find(appRouter.children, {name: module}).children,
       width: '',
-      module,
+      module: 'alarm',
     }
   },
   methods: {
@@ -24,7 +21,11 @@ export default {
       this.width = v ? 'collapsed-width' : 'expand-width'
     }
   },
-  watch: {
+  computed: {
+    menuList() {
+      const find = _.find(this.$store.getters.appMenus, {name: this.module})
+      return find ? find.children : []
+    }
   }
 }
 </script>

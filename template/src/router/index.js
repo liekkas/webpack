@@ -28,8 +28,7 @@ router.beforeEach((to, from, next) => {
   iView.LoadingBar.start()
   const token = Cookie.get('app_token')
   const isAdmin = Cookie.get('app_isAdmin')
-  const menus = Cookie.get('app_menus')
-  console.log('track router', to);
+  const authMenus = Cookie.get('auth_menus')
   if(whiteList.indexOf(to.path) > -1) {
     next()
   } else {
@@ -37,7 +36,7 @@ router.beforeEach((to, from, next) => {
       if(to.path === '/login') {
         next('/')
       } else {
-        if(isAdmin == 1 || menus.indexOf(to.name) > -1) {
+        if(isAdmin == 1 || authMenus.indexOf(to.name) > -1) {
           next()
         } else { //没权限，禁止访问
           next('/403')
