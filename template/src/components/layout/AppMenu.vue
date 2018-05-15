@@ -12,7 +12,7 @@
             <span class="icon-menu">
               <Icon :type="menu.icon" size="18"></Icon>
             </span>
-            <span class="text-menu text-omit">{{menu.label}}</span>
+            <span class="text-menu text-omit">\{{menu.label}}</span>
           </a>
           <Tooltip v-else :content="menu.label" placement="right">
             <a class="menu-father" @click="onMenuChanged(menu.name)">
@@ -28,7 +28,7 @@
               <Icon :type="menu.icon" size="18"></Icon>  
             </span>
             <span class="text-menu text-omit">
-              {{menu.label}}<Icon v-if="menu.isShowChildren" type="arrow-down-b"></Icon><Icon v-else type="arrow-right-b"></Icon>
+              \{{menu.label}}<Icon v-if="menu.isShowChildren" type="arrow-down-b"></Icon><Icon v-else type="arrow-right-b"></Icon>
             </span>
           </a>
           <Tooltip v-else :content="menu.label" placement="right">
@@ -46,7 +46,7 @@
             <span class="icon-menu">
               <Icon :type="child.icon" size="18"></Icon>
             </span>
-            <span class="text-menu text-omit">{{child.label}}</span>
+            <span class="text-menu text-omit">\{{child.label}}</span>
           </a>
           <Tooltip v-else :content="menu.label" placement="right">
             <a class="menu-child" @click="onMenuChanged(child.name)">

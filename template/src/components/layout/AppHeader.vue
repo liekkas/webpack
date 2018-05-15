@@ -11,7 +11,7 @@
            v-for="item in appMenus" :key="item.name" @click="letsgo(item)"
            v-if="isAdmin || authMenus.indexOf(item.name) > -1">
         <Icon :type="item.icon"></Icon>
-        {{ item.label }}
+        \{{ item.label }}
       </div>
     </div>
 
@@ -59,7 +59,6 @@
         
       </div>
     </div>
-    <!-- <Button @click="logout">退出</Button> -->
   </div>
 </template>
 
