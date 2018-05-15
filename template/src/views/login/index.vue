@@ -4,7 +4,7 @@
     <div class="login-box">
       <div class="login-title">
         <img src="/static/logo.png" height="40"/>
-        <div>&nbsp;{{$t('projectName')}}</div>
+        <div>&nbsp;\{{$t('projectName')}}</div>
       </div>
 
       <form autocomplete="off">
@@ -53,7 +53,7 @@
       </form>
     </div>
     <div class="copyright">
-      <span>{{$t('copyright')}}</span>
+      <span>\{{$t('copyright')}}</span>
     </div>
   </div>
 </template>
