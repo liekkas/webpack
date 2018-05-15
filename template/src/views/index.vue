@@ -46,23 +46,7 @@ export default {
   methods: {
     onShowPanel(v) {
       this.showType = this.showType == v ? '' : v
-      console.log('v is ', v);
     }
-  },
-  mounted() {
-    const paths = this.$route.path.split('/')
-    if(paths.length > 2) {
-      this.$store.commit('ADD_OPEN_SLIDE_MNEU', paths[paths.length-2])  
-    }
-  },
-  watch: {
-    '$route'(to) {
-      const paths = this.$route.path.split('/')
-      if(paths.length > 2) {
-        this.$store.commit('ADD_OPEN_SLIDE_MNEU', paths[paths.length-2])  
-      }
-    },
-    
   }
 }
 </script>
