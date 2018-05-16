@@ -11,7 +11,6 @@ export default {
   components: {AppMenu},
   data() {
     return {
-      openNames: this.$store.state.app.openSlideMenu,
       width: '',
       module: 'alarm',
     }
