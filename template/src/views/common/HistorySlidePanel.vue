@@ -2,9 +2,9 @@
   <div style="padding: 24px;">
     <Timeline>
       <TimelineItem v-for="(item, i) in data" :key="i">
-          <p class="title">{{item.title}}</p>
-          <p class="time">{{item.time}}</p>
-          <p class="content">{{item.content}}</p>
+          <p class="title">\{{item.title}}</p>
+          <p class="time">\{{item.time}}</p>
+          <p class="content">\{{item.content}}</p>
       </TimelineItem>
     </Timeline>
   </div>

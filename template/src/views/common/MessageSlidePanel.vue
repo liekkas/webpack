@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="msg-item" v-for="(item,i) in data" :key="i">
-      <p>{{item.title}}</p>
-      <p>{{item.time}}</p>
+      <p>\{{item.title}}</p>
+      <p>\{{item.time}}</p>
     </div>
   </div>
 </template>

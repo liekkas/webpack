@@ -1,7 +1,7 @@
 <template>
   <div class="slide-panel">
     <div class="slide-panel-header">
-      <h3>{{title}}</h3>
+      <h3>\{{title}}</h3>
       <Button shape="circle" type="ghost" size="small" 
               icon="close" @click="$emit('hide-panel')"></Button>
     </div>
