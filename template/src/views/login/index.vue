@@ -19,13 +19,13 @@
             style="margin-left:-44px;margin-bottom:8px; color: white;">
           </Button>
           <div v-if="ruleInline.usernameMsg" class="error-msg" style="bottom: 88px;">
-            {{ruleInline.usernameMsg}}
+            \{{ruleInline.usernameMsg}}
           </div>
           <div v-if="ruleInline.passwordMsg" class="error-msg" style="bottom: -27px;">
-            {{ruleInline.passwordMsg}}
+            \{{ruleInline.passwordMsg}}
           </div>
           <div v-if="loginMsg" class="error-msg">
-            {{loginMsg}}
+            \{{loginMsg}}
           </div>
         </div>
         <svg viewBox="0 0 320 300">
