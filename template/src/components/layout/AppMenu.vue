@@ -48,7 +48,7 @@
             </span>
             <span class="text-menu text-omit">\{{child.label}}</span>
           </a>
-          <Tooltip v-else :content="menu.label" placement="right">
+          <Tooltip v-else :content="child.label" placement="right">
             <a class="menu-child" @click="onMenuChanged(child.name)">
               <span class="icon-menu">
                 <Icon :type="child.icon" size="18"></Icon>
